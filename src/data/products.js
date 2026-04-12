@@ -1,12 +1,12 @@
 const products = [
-  
   {
     id: 'instant-cerelac',
     category: 'Health Mix',
     name: 'Instant Cerelac',
-    price: 230,
-    weights: ['200gm','500gm'],
-    image: 'https://via.placeholder.com/400x300.png?text=Instant+Cerelac',
+    variants: [
+      { weight: '200gm', price: 230 },
+      { weight: '500gm', price: 520 }
+    ],
     description: 'Nutritious instant cereal for infants and toddlers.',
     ingredients: ['Cereal blend', 'Vitamins']
   },
@@ -14,9 +14,10 @@ const products = [
     id: 'oats-porridge',
     category: 'Health Mix',
     name: 'Oats Porridge Mix',
-    price: 230,
-    weights: ['200gm','500gm'],
-    image: 'https://via.placeholder.com/400x300.png?text=Oats+Porridge+Mix',
+    variants: [
+      { weight: '200gm', price: 230 },
+      { weight: '500gm', price: 530 }
+    ],
     description: 'Quick-cook oats porridge, wholesome breakfast option.',
     ingredients: ['Oats']
   },
@@ -24,9 +25,10 @@ const products = [
     id: 'karuppu-kavuni-porridge',
     category: 'Health Mix',
     name: 'Karuppu Kavuni Porridge Mix',
-    price: 230,
-    weights: ['200gm','500gm'],
-    image: 'https://via.placeholder.com/400x300.png?text=Karuppu+Kavuni+Porridge',
+    variants: [
+      { weight: '200gm', price: 230 },
+      { weight: '500gm', price: 520 }
+    ],
     description: 'Traditional karuppu kavuni blend for a hearty porridge.',
     ingredients: ['Karuppu kavuni rice']
   },
@@ -34,29 +36,35 @@ const products = [
     id: 'roasted-ragi-flour',
     category: 'Flour',
     name: 'Roasted Ragi Flour',
-    price: 100,
-    weights: ['100gm','250gm','500gm'],
-    image: 'https://via.placeholder.com/400x300.png?text=Roasted+Ragi+Flour',
+    variants: [
+      { weight: '100gm', price: 100 },
+      { weight: '250gm', price: 170 },
+      { weight: '500gm', price: 270 }
+    ],
     description: 'Aromatic roasted ragi flour for porridge and baking.',
     ingredients: ['Roasted ragi']
   },
   {
-    id: 'health-mix-basic',
+    id: 'health-mix',
     category: 'Health Mix',
     name: 'Health Mix',
-    price: 140,
-    weights: ['100gm','250gm','500gm'],
-    image: 'https://via.placeholder.com/400x300.png?text=Health+Mix',
+    variants: [
+      { weight: '100gm', price: 140 },
+      { weight: '250gm', price: 220 },
+      { weight: '500gm', price: 320 }
+    ],
     description: 'Balanced health mix — seeds and grains for daily nutrition.',
-    ingredients: ['Mixed grains','Seeds']
+    ingredients: ['Mixed grains', 'Seeds']
   },
   {
     id: 'nalangu-maavu',
     category: 'Powders',
     name: 'Nalangu Maavu (Baby Bath Powder)',
-    price: 170,
-    weights: ['100gm','250gm','500gm'],
-    image: 'https://via.placeholder.com/400x300.png?text=Nalangu+Maavu',
+    variants: [
+      { weight: '100gm', price: 170 },
+      { weight: '250gm', price: 350 },
+      { weight: '500gm', price: 620 }
+    ],
     description: 'Traditional baby bath powder blend.',
     ingredients: ['Herbal powders']
   },
@@ -64,9 +72,11 @@ const products = [
     id: 'sprouted-ragi-flour',
     category: 'Flour',
     name: 'Sprouted Ragi Flour',
-    price: 150,
-    weights: ['100gm','250gm','500gm'],
-    image: 'https://via.placeholder.com/400x300.png?text=Sprouted+Ragi+Flour',
+    variants: [
+      { weight: '100gm', price: 150 },
+      { weight: '250gm', price: 220 },
+      { weight: '500gm', price: 370 }
+    ],
     description: 'Sprouted ragi flour rich in nutrients.',
     ingredients: ['Sprouted ragi']
   },
@@ -74,9 +84,10 @@ const products = [
     id: 'nendram-banana-powder',
     category: 'Powders',
     name: 'Nendram Banana Powder',
-    price: 365,
-    weights: ['200gm','400gm'],
-    image: 'https://via.placeholder.com/400x300.png?text=Nendram+Banana+Powder',
+    variants: [
+      { weight: '200gm', price: 365 },
+      { weight: '400gm', price: 615 }
+    ],
     description: 'Dehydrated nendram banana powder — natural sweetness and flavor.',
     ingredients: ['Nendram banana']
   },
@@ -84,13 +95,13 @@ const products = [
     id: 'sweet-potato-powder',
     category: 'Powders',
     name: 'Sweet Potato Powder',
-    price: 350,
-    weights: ['200gm','400gm'],
-    image: 'https://via.placeholder.com/400x300.png?text=Sweet+Potato+Powder',
+    variants: [
+      { weight: '200gm', price: 350 },
+      { weight: '400gm', price: 615 }
+    ],
     description: 'Fine sweet potato powder for porridges and baking.',
     ingredients: ['Sweet potato']
   }
-]
+];
 
-export default products
-
+export default products;

@@ -1,6 +1,18 @@
 .hero-bg {
-  background-image: url("C:\Users\Admin\OneDrive\Music\Desktop\food health\WhatsApp Image 2026-02-03 at 12.55.29 PM.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

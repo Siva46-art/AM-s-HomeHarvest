@@ -15,7 +15,7 @@ export default function Home(){
   return (
     <>
       <Hero />
-      <div className="container py-8">
+      <div className="container py-8 animate-fade-in">
         <section className="mt-12">
           <div className="flex items-end justify-between mb-8">
             <div>
@@ -29,17 +29,29 @@ export default function Home(){
           </div>
         </section>
 
-        <CategoryList />
+        <section className="mt-20">
+          <CategoryList />
+        </section>
 
-        <WhyUs />
+        <section className="mt-20">
+          <WhyUs />
+        </section>
 
-        <HealthTips />
+        <section className="mt-20">
+          <HealthTips />
+        </section>
 
-        <Testimonials />
+        <section className="mt-20">
+          <Testimonials />
+        </section>
 
-        <Newsletter />
+        <section className="mt-20">
+          <Newsletter />
+        </section>
 
-        <FAQ />
+        <section className="mt-20">
+          <FAQ />
+        </section>
       </div>
     </>
   )

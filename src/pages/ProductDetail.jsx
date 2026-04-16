@@ -18,10 +18,23 @@ export default function ProductDetail(){
 
   return (
     <div className="container py-12">
-      <div className="max-w-4xl mx-auto glass-card p-8 md:p-12">
-        <div className="flex flex-col md:flex-row gap-12">
-          {/* Product info - Take full width since image is removed */}
-          <div className="flex-1">
+      <div className="max-w-6xl mx-auto glass-card p-8 md:p-12 overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          {/* Image Column */}
+          <div className="relative group">
+            <div className="aspect-[4/5] rounded-[2.5rem] bg-gray-50 overflow-hidden shadow-2xl border-4 border-white">
+              {product.image ? (
+                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-8xl">🌿</div>
+              )}
+            </div>
+            {/* Visual Decoration */}
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-green-200/50 blur-3xl rounded-full -z-10"></div>
+          </div>
+
+          {/* Product info */}
+          <div className="flex flex-col">
             <div className="flex items-center gap-4 mb-6">
               <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
                 {product.category}
@@ -86,6 +99,18 @@ export default function ProductDetail(){
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto mt-20 animate-fade-in">
+        <h2 className="text-3xl font-black text-[#1a2e1a] mb-8">You May Also Love</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {products
+            .filter(p => p.category === product.category && p.id !== product.id)
+            .slice(0, 4)
+            .map(p => (
+              <ProductCard key={p.id} product={p} />
+            ))
+          }
         </div>
       </div>
     </div>

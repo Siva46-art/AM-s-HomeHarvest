@@ -3,6 +3,7 @@ const products = [
     id: 'instant-cerelac',
     category: 'Health Mix',
     name: 'Instant Cerelac',
+    image: '/src/assets/images/product_ragi_flour_1776325182791.png',
     variants: [
       { weight: '200gm', price: 230 },
       { weight: '500gm', price: 520 }
@@ -14,6 +15,7 @@ const products = [
     id: 'oats-porridge',
     category: 'Health Mix',
     name: 'Oats Porridge Mix',
+    image: '/src/assets/images/product_health_mix_1776325221047.png',
     variants: [
       { weight: '200gm', price: 230 },
       { weight: '500gm', price: 530 }
@@ -25,6 +27,7 @@ const products = [
     id: 'karuppu-kavuni-porridge',
     category: 'Health Mix',
     name: 'Karuppu Kavuni Porridge Mix',
+    image: '/src/assets/images/product_health_mix_1776325221047.png',
     variants: [
       { weight: '200gm', price: 230 },
       { weight: '500gm', price: 520 }
@@ -36,6 +39,7 @@ const products = [
     id: 'roasted-ragi-flour',
     category: 'Flour',
     name: 'Roasted Ragi Flour',
+    image: '/src/assets/images/product_ragi_flour_1776325182791.png',
     variants: [
       { weight: '100gm', price: 100 },
       { weight: '250gm', price: 170 },
@@ -48,6 +52,7 @@ const products = [
     id: 'health-mix',
     category: 'Health Mix',
     name: 'Health Mix',
+    image: '/src/assets/images/product_health_mix_1776325221047.png',
     variants: [
       { weight: '100gm', price: 140 },
       { weight: '250gm', price: 220 },
@@ -60,6 +65,7 @@ const products = [
     id: 'nalangu-maavu',
     category: 'Powders',
     name: 'Nalangu Maavu (Baby Bath Powder)',
+    image: '/src/assets/images/product_ragi_flour_1776325182791.png',
     variants: [
       { weight: '100gm', price: 170 },
       { weight: '250gm', price: 350 },
@@ -72,6 +78,7 @@ const products = [
     id: 'sprouted-ragi-flour',
     category: 'Flour',
     name: 'Sprouted Ragi Flour',
+    image: '/src/assets/images/product_ragi_flour_1776325182791.png',
     variants: [
       { weight: '100gm', price: 150 },
       { weight: '250gm', price: 220 },
@@ -84,6 +91,7 @@ const products = [
     id: 'nendram-banana-powder',
     category: 'Powders',
     name: 'Nendram Banana Powder',
+    image: '/src/assets/images/product_banana_powder_1776325201733.png',
     variants: [
       { weight: '200gm', price: 365 },
       { weight: '400gm', price: 615 }
@@ -95,6 +103,7 @@ const products = [
     id: 'sweet-potato-powder',
     category: 'Powders',
     name: 'Sweet Potato Powder',
+    image: '/src/assets/images/product_banana_powder_1776325201733.png',
     variants: [
       { weight: '200gm', price: 350 },
       { weight: '400gm', price: 615 }

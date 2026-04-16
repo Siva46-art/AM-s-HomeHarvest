@@ -5,6 +5,15 @@ export default function ProductCard({ product }){
   return (
     <div className="glass-card p-6 flex flex-col group h-full">
       <Link to={`/products/${product.id}`} className="block flex-1 flex flex-col">
+        <div className="aspect-square w-full rounded-2xl bg-gray-50 dark:bg-gray-900/50 mb-6 overflow-hidden relative group-hover:shadow-2xl transition-all duration-500">
+          {product.image ? (
+            <img src={product.image} alt={product.name} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-5xl">🌿</div>
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        </div>
+
         <div className="flex-1 flex flex-col">
           <div className="flex items-center justify-between mb-4">
             <span className="bg-green-50 dark:bg-green-900/40 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-green-700 dark:text-green-300 border border-green-100 dark:border-green-800">

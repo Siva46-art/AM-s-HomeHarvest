@@ -1,4 +1,6 @@
 # Healthy Food Store (React + Vite + Tailwind)
+**Live Demo:** [https://siva46-art.github.io/AM-s-HomeHarvest/](https://siva46-art.github.io/AM-s-HomeHarvest/)
+
 
 This is a minimal, modern e-commerce scaffold built with React, Vite and Tailwind CSS. It includes pages for products, product details, cart, authentication (mock), and contact page.
 
